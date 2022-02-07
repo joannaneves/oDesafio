@@ -1,0 +1,143 @@
+footer {
+  width: 100%;
+  height: 180px;
+  float: left;
+  background: url('assets/Rodapé.png') no-repeat center top;
+  background-size: contain;
+}
+
+footer .container {
+  width: 660px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+footer .logo {
+  margin: 20px 0 0 0;
+}
+
+.copyright {
+  margin: 32px 0 0 20px;
+  font-family: HelveticaNeue;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  float: left;
+}
+#social-media {
+  margin-top: 25px;
+  float: right;
+}
+#social-media a {
+  width: 14.5px;
+  height: 14.5px;
+  margin-right: 17.5px;
+  display: inline-block;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+.facebook {
+  background: url('assets/Fb.png') no-repeat;
+}
+.facebook:hover {
+  background-image: url('assets/Fb_active.png');
+}
+.instagram {
+  background: url('assets/IG.png') no-repeat;
+}
+.instagram:hover {
+  background-image: url('assets/IG_active.png');
+}
+.twitter {
+  background: url('assets/Twitter.png') no-repeat;
+}
+.twitter:hover {
+  background-image: url('assets/Twitter_active.png');
+}
+.linkedin {
+  background: url('assets/Linkedin.png') no-repeat;
+}
+.linkedin:hover {
+  background-image: url('assets/Linkedin_active.png');
+}
+.pinterest {
+  background: url('assets/Pinterest.png') no-repeat;
+}
+.pinterest:hover {
+  background-image: url('assets/Pinterest_active.png');
+}
+.lightbox-background {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+}
+.lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 860px;
+  height: 360px;
+  border: 16px solid #797979;
+  background-color: white;
+  z-index: 1002;
+  overflow: hidden;
+  font-family: Roboto;
+}
+.lightbox-content button {
+  position: absolute;
+  z-index: 500;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  font-size: 9px;
+  font-weight: 700;
+}
+.lightbox-image {
+  float: left;
+  background-size: contain;
+}
+.lightbox-desc {
+  float: right;
+  width: 30%;
+  margin-top: 50px;
+  color: #555455;
+  font-size: 11px;
+  position: relative;
+  padding-right: 60px;
+  text-align: left;
+  line-height: 16px;
+}
+.lightbox-desc h3 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 23px;
+  line-height: 16px;
+}
+.lightbox-actions {
+  margin-top: 20px;
+  color: var(--lipstick);
+}
+.lightbox-like {
+  border-radius: 19px;
+  border: solid 0.5px var(--lipstick);
+  background: url('assets/Like.png') no-repeat 13px center;
+  padding: 3px 20px 3px 24px;
+  text-align: center;
+  display: inline;
+}
+.lightbox-recipe {
+  display: inline;
+  background: url('assets/Seta_direita.png') no-repeat left center;
+  padding: 3px 20px 3px 14px;
+  margin-left: 20px;
+}

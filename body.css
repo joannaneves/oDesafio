@@ -1,0 +1,352 @@
+:root {
+  --lipstick: #e82147;
+  --white: #fff;
+  --fair: 'Playfair Display', serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+}
+body {
+  width: 100%;
+  background-color: #fff;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.digitacao-simples {
+  width: 60ch;
+  animation: typing 2s steps(40);
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.5px;
+  font-size: 1em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+/* Bem-vindo - receita */
+.element-1 {
+  width: 302px;
+  height: 220px;
+  right: -30px;
+  top: -15px;
+  background: url('assets/Elemento_1.png') no-repeat right;
+  position: absolute;
+}
+.element-2 {
+  width: 200px;
+  padding-top: 450px;
+  left: 80px;
+  background: url('assets/Elemento_2.png') no-repeat left center;
+  position: absolute;
+}
+.element-4 {
+  width: 84px;
+  height: 83px;
+  left: 5%;
+  top: 0%;
+  background: url('assets/Elemtno_4.png') no-repeat bottom center;
+  position: absolute;
+}
+.element-5 {
+  width: 100%;
+  height: 50px;
+  margin: 50px 0 85px 0;
+  background: url('assets/Elemento_5.png') no-repeat bottom center;
+}
+
+.element-6 {
+  width: 85px;
+  height: 77px;
+  right: 5%;
+  top: 50%;
+  background: url('assets/Elemento_6.png') no-repeat bottom center;
+  position: absolute;
+}
+.element-7 {
+  width: 67px;
+  height: 54px;
+  background: url('assets/Elemento_7.png') no-repeat;
+  position: absolute;
+  right: 5%;
+  top: 40%;
+}
+
+.recipe {
+  width: 530px;
+  margin: 0 auto;
+}
+.welcome-back {
+  padding-top: 132px;
+  font-family: var(--fair);
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+}
+.recipe-info {
+  margin-top: 42px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: left;
+  color: #0d0d0d;
+}
+.recipe-picture {
+  width: 225px;
+  height: 180px;
+  top: -180px;
+  left: 10%;
+  float: right;
+  position: relative;
+}
+.recipe-hover {
+  width: 84.5%;
+  padding-left: 35px;
+  background: #fff url('assets/Seta_direita.png') 10px center no-repeat;
+  color: var(--lipstick);
+  font-size: 8px;
+  font-family: Roboto;
+  line-height: 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.recipe-picture:hover .hrecipe-hover {
+  transition: opacity 1s;
+  opacity: 0.5;
+}
+/* LATEST RECIPES */
+#latest-recipes {
+  width: 100%;
+  float: right;
+  margin-top: -96px;
+}
+#latest-recipes .container {
+  max-width: 960px;
+  height: 350px;
+  margin: 0 auto;
+  padding-top: 45.5px;
+  background-color: #ffffff;
+}
+#latest-recipes h2 {
+  font-family: var(--fair);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+/* Body */
+#latest-recipes-carousel {
+  width: 100%;
+  max-width: 660px;
+  margin: 69px auto;
+}
+.carousel-item {
+  position: relative;
+}
+.carousel-recipe {
+  width: 320px;
+  margin-right: 57px;
+  float: left;
+  box-shadow: 0 5px 5px 0 #797979;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.carousel-recipe img {
+  object-fit: cover;
+}
+.recipe-description {
+  font-size: 8px;
+  font-family: Roboto;
+  font-weight: 700;
+  text-align: left;
+  color: var(--lipstick);
+}
+.recipe-description .title {
+  font-family: var(--fair);
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 12px 0;
+}
+.difficulty-level {
+  float: left;
+  margin-right: 10px;
+}
+.star-level {
+  float: left;
+  display: inline-flex;
+}
+.star {
+  width: 8px;
+  height: 7.6px;
+  background: url('assets/Estrela.svg') no-repeat;
+  background-size: cover;
+}
+.disabled {
+  opacity: 0.1;
+}
+.recipe-hover {
+  width: 100%;
+  padding-left: 35px;
+  background: #fff url('assets/Seta_direita.png') 10px center no-repeat;
+  color: var(--lipstick);
+  font-size: 8px;
+  font-family: Roboto;
+  line-height: 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.carousel-recipe:hover .recipe-hover {
+  transition: opacity 1s;
+  opacity: 0.5;
+}
+.amp-carousel-button {
+  width: 30px;
+  height: 30px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+.amp-carousel-button-prev {
+  margin: 100px 0 0 375px;
+  background-image: url('./assets/Seta_esquerda.svg');
+  background-size: 10px;
+  background-color: var(--white);
+  border-radius: 16.5px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+.amp-carousel-button-next {
+  margin: 100px 200px 0 0;
+  background-image: url('./assets/Seta_direita.svg');
+  background-size: 10px;
+  background-color: var(--white);
+  border-radius: 16.5px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+}
+.amp-carousel-button-prev:hover {
+  background-color: var(--lipstick);
+  background-image: url('./assets/Seta_esquerda_b.svg');
+}
+.amp-carousel-button-next:hover {
+  background-color: var(--lipstick);
+  background-image: url('./assets/Seta_direita_b.svg');
+}
+/* Body - Mundo Gatronomico*/
+#gastronomic-world {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+#gastronomic-world .container {
+  max-width: 960px;
+  height: 450px;
+  margin: 0 auto;
+  background-color: var(--white);
+}
+#gastronomic-world .container h2 {
+  font-family: var(--fair);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 55px;
+}
+#gastronomic-world .gw-types {
+  max-width: 660px;
+  margin: 0 auto;
+}
+#gw-selector {
+  width: 319px;
+  height: 214px;
+  float: left;
+  font-size: 26px;
+}
+amp-selector#gw-selector [option][selected] {
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.16);
+  outline: none;
+  color: var(--lipstick);
+}
+.items {
+  width: 225px;
+  margin-bottom: 12px;
+  padding: 20px 0px 20px 100px;
+  border: solid 0.5px #f0f0f0;
+  background-color: var(--white);
+  color: #a19b9b;
+  box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0);
+  font-family: var(--fair);
+  font-size: 16px;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+
+.items:hover {
+  color: var(--lipstick);
+  border-color: var(--lipstick);
+  box-shadow: 0 5px 25px 0 #fff;
+}
+.cuisine .items {
+  background: url('assets/Cozinha.png') no-repeat;
+  background-position: 55px center;
+}
+.cuisine .items:hover,
+amp-selector#gw-selector .cuisine [option][selected] {
+  background-image: url('assets/Cozinha_active.png');
+}
+.patisserie .items {
+  background: url('assets/Patisserie.png') no-repeat;
+  background-position: 55px center;
+}
+.patisserie .items:hover,
+amp-selector#gw-selector .patisserie [option][selected] {
+  background-image: url('assets/Patisserie_active.png');
+}
+.drink .items {
+  background: url('assets/Drinks.png') no-repeat;
+  background-position: 55px center;
+}
+.drink .items:hover,
+amp-selector#gw-selector .drink [option][selected] {
+  background-image: url('assets/Drinks_active.png');
+}
+
+#gw-carousel {
+  width: 319px;
+  height: 213px;
+
+  float: right;
+}
+#gw-carousel img {
+  object-fit: cover;
+}

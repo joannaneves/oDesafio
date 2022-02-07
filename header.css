@@ -1,0 +1,252 @@
+/* Header */
+header {
+  width: 100%;
+  height: 350px;
+  background-color: #ffdbbc;
+}
+header .container {
+  max-width: 960px;
+  height: 350px;
+  margin: 0 auto;
+}
+/* Header => Logo */
+.logo {
+  width: 67.5px;
+  height: 27px;
+  margin: 27px 0 0 27px;
+  font-family: var(--fair);
+  font-size: 20.5px;
+  font-weight: 700;
+  text-align: left;
+  color: #000000;
+  float: left;
+}
+.text-style-1 {
+  color: var(--lipstick);
+}
+
+/* Header => Search bar */
+.search {
+  width: 45%;
+  height: 30px;
+  padding: 0px 20px;
+  float: left;
+  margin-left: 13%;
+  margin-top: 24px;
+  border-radius: 20px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #fff;
+}
+.search-bar {
+  width: 85%;
+  height: 28px;
+  border: none;
+  font-size: 14px;
+}
+.search-bar::placeholder {
+  width: 88.5px;
+  height: 10.5px;
+  opacity: 0.18;
+  font-family: Roboto;
+  font-size: 8px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+.search-image {
+  height: 12px;
+  width: 12px;
+  margin-top: 10px;
+  float: right;
+  background: url('assets/Lupa.png') no-repeat;
+  border: none;
+  cursor: pointer;
+}
+/* Header => Profile */
+.user {
+  margin-top: 24px;
+  margin-right: 124px;
+  float: right;
+  color: var(--lipstick);
+  cursor: pointer;
+}
+.user-name {
+  margin: 0 auto;
+  margin: 5px 5px 10px 0;
+  float: left;
+  font-family: Roboto;
+  font-size: 8px;
+  font-weight: 700;
+}
+.user-avatar-container {
+  width: 30px;
+  height: 30px;
+  float: right;
+  border-radius: 16.5px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--lipstick);
+}
+.user-avatar {
+  margin: 4.8px 5.8px 4.9px 5.4px;
+  overflow: hidden;
+}
+#user-menu {
+  float: left;
+  width: 35%;
+  display: block;
+  background-color: var(--white);
+}
+#user-menu .container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 15px;
+}
+
+.close-menu {
+  margin: 0 auto;
+  height: 16px;
+  margin-top: 10px;
+  display: block;
+  line-height: 16px;
+}
+.close-menu span {
+  margin-left: 11px;
+  font-size: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+#user-menu .user {
+  width: 100%;
+  margin: 0 auto;
+  color: var(--lipstick);
+  float: left;
+}
+#user-menu .user-avatar-container {
+  width: 46px;
+  height: 46px;
+  margin: 40px 0 23px 0;
+  border-radius: 23px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--lipstick);
+  overflow: hidden;
+  float: left;
+}
+#user-menu .user-avatar {
+  width: 24px;
+  height: 24px;
+}
+#user-menu #user-name-sidebar {
+  margin-top: 51px;
+  margin-left: 9.5px;
+  float: left;
+  font-size: 16px;
+  font-family: var(--fair);
+  color: var(--lipstick);
+  font-weight: 700;
+}
+#user-menu .info span {
+  text-align: left;
+  font-family: Roboto;
+  font-size: 10.5px;
+  font-weight: 700;
+}
+#user-menu .email {
+  background: url('assets/Email.png') no-repeat center left;
+  font-size: 12px;
+  padding-left: 20px;
+  margin: 13.5px 0 0 0;
+  clear: both;
+  display: block;
+}
+#user-menu .phone {
+  background: url('assets/Telefone.png') no-repeat center left;
+  color: #000;
+  font-size: 12px;
+  width: 100%;
+  padding-left: 20px;
+  margin: 8.5px 0 50px 0;
+}
+#plan {
+  float: left;
+  font-size: 21px;
+  font-family: var(--fair);
+  font-weight: 700;
+}
+#days-left {
+  float: right;
+  font-family: Roboto;
+  line-height: 36px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.progress-bar {
+  width: 100%;
+  height: 9px;
+  margin-top: 9px;
+  border-radius: 12px;
+  background: #e8e8e8;
+  position: relative;
+  float: left;
+  display: block;
+}
+.progress {
+  width: 60%;
+  height: 9px;
+  border-radius: 12px;
+  display: block;
+  background: var(--lipstick);
+}
+#subscription {
+  width: 100%;
+  margin-top: 44px;
+  font-weight: 700;
+  border-radius: 25px;
+  box-shadow: 0 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: var(--lipstick);
+  font-family: var(--fair);
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding: 13px 0 13px 0;
+  float: left;
+}
+#options {
+  width: 100%;
+  height: 100px;
+  margin-top: 105px;
+  font-size: 9px;
+  font-family: Roboto;
+  font-weight: 700;
+  float: left;
+}
+#options ul {
+  list-style-type: none;
+}
+#options li a {
+  width: 100%;
+  padding-left: 15px;
+  margin-bottom: 11px;
+  float: left;
+  color: #463e3e;
+  transition-timing-function: ease-in;
+  transition: 0.5s;
+}
+#options li a:hover {
+  color: var(--lipstick);
+}
+.report {
+  background: url('assets/Bug.png') no-repeat left center;
+}
+.password {
+  background: url('assets/Senha.png') no-repeat left center;
+}
+.sign-out {
+  background: url('assets/Sair.png') no-repeat left center;
+}
